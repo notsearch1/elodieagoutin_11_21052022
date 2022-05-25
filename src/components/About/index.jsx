@@ -1,3 +1,5 @@
+import '../../styles/About.css'
+
 import Banner from '../Banner';
 import Header from '../Header'
 import Footer from '../Footer'
@@ -7,7 +9,9 @@ function About() {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner 
+      condition={false}
+      />
 
       <div className="about">
           <h2>Fiabilité</h2>

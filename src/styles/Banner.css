@@ -3,12 +3,18 @@
     margin:40px 100px 60px;
     border-radius:25px;
     height: 225px;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(../assets/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.sloganHome{
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../assets/background.png);
+}
+.sloganAbout{
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
+
 }
 .slogan{
     font-size: 68px;
