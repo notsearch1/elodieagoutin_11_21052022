@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import "../../styles/Error.css";
 import Header from "../Header";
 import Footer from "../Footer";
+import { Fragment } from "react";
+
 function Error() {
   return (
-    <div className="errorWrapper">
+    <Fragment className="errorWrapper">
       <Header />
       <div className="error">
         <h1>404</h1>
@@ -14,7 +16,7 @@ function Error() {
         </Link>
       </div>
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 

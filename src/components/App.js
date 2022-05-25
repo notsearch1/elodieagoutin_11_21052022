@@ -1,8 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
+import '../styles/normalize.css'
 import '../styles/index.css'
 import Home from './Home'
 import About from './About'
 import Error from './Error'
+
 
 
 
