@@ -1,0 +1,52 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 31px auto;
+    justify-content: space-evenly;
+    width: 90%;
+    height: auto;
+    background-color: #f7f5f8;
+    border-radius: 25px;
+  }
+  .maskCard {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    border-radius: 10px;
+  }
+  
+  .linkCard {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    height: 340px;
+    margin: 30px 10px;
+    border-radius: 10px;
+  }
+  
+  .imgCard {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+.titleLodging {
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  bottom: 30px;
+  padding: 10px 15px;
+  color: #FFF;
+  height: 50px;
+  width: calc(100% - 30px);
+  background-color: #ff6060b3;
+
+}  
