@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/elodieagoutin_11_21052022/static/css/main.940ff16a.css",
+    "main.js": "/elodieagoutin_11_21052022/static/js/main.c0a3febd.js",
+    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png": "/elodieagoutin_11_21052022/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.02e1c4f7498de1cb845b.png",
+    "static/media/background.png": "/elodieagoutin_11_21052022/static/media/background.024f945a990ae17b81b7.png",
+    "index.html": "/elodieagoutin_11_21052022/index.html",
+    "main.940ff16a.css.map": "/elodieagoutin_11_21052022/static/css/main.940ff16a.css.map",
+    "main.c0a3febd.js.map": "/elodieagoutin_11_21052022/static/js/main.c0a3febd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.940ff16a.css",
+    "static/js/main.c0a3febd.js"
+  ]
+}
