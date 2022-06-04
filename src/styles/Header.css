@@ -14,5 +14,45 @@
 .header a:first-child{
     margin-right: 20px;
 }
+.logo{
+    max-width: 100%;
+    height: auto;
+}
+.home-link{
+    width: 60%;
+}
 
+@media (max-width: 510px) { 
+    .header{
+        margin:20px;
+        padding:0;
+        height: 50px;
+    }
+    .header a{
+        font-size: 12px;
+    }
+    .logo{
+        max-width: 60%;
+        height: auto;
+    }
+  
+    .header a:first-child{
+        margin-right: 10px;
+    }
+ }
+
+ @media (max-width: 768px) and (min-width:510px){
+    .header a{
+        font-size: 16px;
+    }
+ }
+
+ @media (max-width: 900px) and (min-width:510px){
+    .header{
+        margin:40px;
+        padding:0;
+        height: 60px;
+    }
+ }
+ 
 

@@ -1,38 +1,54 @@
-.carouselContainer{
- position:relative;
- margin:0 100px;
+.carouselContainer {
+  position: relative;
+  margin: 0 100px;
   height: 415px;
-  
 }
 
-.lease{
+.lease {
   height: 415px;
   width: 100%;
   object-fit: cover;
-  border-radius:25px;
+  border-radius: 25px;
 }
-.fa-chevron-left{
-  position:absolute;
-  color:#fff;
-  font-size: 80PX;
-  left:25px;
-  bottom:167px;
+.fa-chevron-left,
+.fa-chevron-right {
+  position: absolute;
+  color: #fff;
+  font-size: 80px;
+  bottom: 167px;
 }
-.fa-chevron-right{
-  position:absolute;
-  color:#fff;
-  font-size: 80PX;
-  right:25px;
-  bottom:167px;
+.fa-chevron-right {
+  right: 25px;
 }
-.count{
-  color:#fff;
-  position:absolute;
-  bottom:25px;
-  left:50%;
+.fa-chevron-left {
+  left: 25px;
+}
+.count {
+  color: #fff;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+}
+@media (max-width: 768px) {
+  .carouselContainer {
+    margin: 20px;
+  }
+  .lease,
+  .carouselContainer {
+    height: 255px;
+  }
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 20px;
+    top: 117px;
+  }
+  .count {
+    display: none;
+  }
+}
 
+@media (max-width: 900px) and (min-width: 768px) {
+  .carouselContainer {
+    margin: 40px;
+  }
 }
-  
- 
-  
- 

@@ -34,5 +34,15 @@
 } 
 .updateMargin{
     margin:0;
-
 }
+
+@media (max-width: 768px) {
+    .about-title-text{
+       font-size: 13px; 
+    }
+   
+  }
+  
+  @media (max-width: 900px) and (min-width: 768px) {
+   
+  }

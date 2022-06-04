@@ -1,20 +1,19 @@
-import "../../styles/Home.css";
 import Header from "../Header";
 import Banner from "../Banner";
 import Footer from "../Footer";
 import { useFetch } from '../../utils/hooks'
 import Cards from '../Cards'
+import {Loader} from '../../utils/Atoms.jsx'
 
 
 
 
 
 function Home() {
-  const { data, error } = useFetch(`../../../datas/datas.json`)
+  const { data, error, isLoading } = useFetch(`../../../datas/datas.json`)
   if (error) {
-    return <span>Il y a un problème</span>
+    return <span>Un problème est survenu lors du téléchargement des images</span>
   }
-  
 
 
 
@@ -24,7 +23,10 @@ function Home() {
       <Banner
         condition={true} />
       <section>
-       <Cards data={data}/>  
+       {isLoading ? (
+         <Loader />
+       ):(
+         <Cards data={data}/> )} 
       </section>
       <Footer />
     </div>

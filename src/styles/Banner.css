@@ -1,22 +1,46 @@
+.slogan-wrapper {
+  margin: 40px 100px 60px;
+  border-radius: 25px;
+  height: 225px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sloganHome {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../public/assets/background.png);
+}
+.sloganAbout {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../public/assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
+}
+.slogan {
+  font-size: 68px;
+  color: #fff;
+  margin: 20px;
+}
+@media (max-width: 768px) {
+  .slogan-wrapper {
+    margin: 20px;
+    height: 120px;
+    border-radius: 10px;
+  }
+  .slogan {
+    font-size: 32px;
+  }
+}
 
-.slogan-wrapper{
-    margin:40px 100px 60px;
-    border-radius:25px;
-    height: 225px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 500px) {
+  .slogan {
+    font-size: 24px;
+  }
 }
-.sloganHome{
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../../public/assets/background.png);
-}
-.sloganAbout{
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../../public/assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
-
-}
-.slogan{
-    font-size: 68px;
-    color:#fff;
-}
+@media (max-width: 900px) and (min-width:768px){
+    .slogan-wrapper {
+        margin: 40px;
+        
+      }
+ }
