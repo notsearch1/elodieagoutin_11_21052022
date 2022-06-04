@@ -1,0 +1,38 @@
+.carouselContainer{
+ position:relative;
+ margin:0 100px;
+  height: 415px;
+  
+}
+
+.lease{
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+  border-radius:25px;
+}
+.fa-chevron-left{
+  position:absolute;
+  color:#fff;
+  font-size: 80PX;
+  left:25px;
+  bottom:167px;
+}
+.fa-chevron-right{
+  position:absolute;
+  color:#fff;
+  font-size: 80PX;
+  right:25px;
+  bottom:167px;
+}
+.count{
+  color:#fff;
+  position:absolute;
+  bottom:25px;
+  left:50%;
+
+}
+  
+ 
+  
+ 

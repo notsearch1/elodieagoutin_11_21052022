@@ -4,7 +4,7 @@ import '../styles/index.css'
 import Home from './Home'
 import About from './About'
 import Error from './Error'
-import Location from './Location'
+import Lease from './Lease'
 
 
 
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<About />} />
-        <Route path="/location/:id" element={<Location />} />
+        <Route path="/lease/:id" element={<Lease />} />
         <Route path="/*" element={<Error />} />
       </Routes>
       

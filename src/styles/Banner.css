@@ -10,10 +10,10 @@
     align-items: center;
 }
 .sloganHome{
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../assets/background.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../../public/assets/background.png);
 }
 .sloganAbout{
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../../public/assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
 
 }
 .slogan{
