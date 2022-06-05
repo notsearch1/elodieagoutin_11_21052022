@@ -6,19 +6,24 @@ import "../../styles/Lease.css";
 import { useParams } from "react-router-dom";
 import { Loader } from "../../utils/Atoms.jsx";
 import Stars from "../Stars";
+import { useState } from "react";
+
+
 
 function Lease() {
   const { id } = useParams();
   const { data, error, isLoading } = useFetch(`../../../datas/datas.json`);
-  if (error) {
-    return (
-      <span>Un problème est survenu lors du téléchargement des images</span>
-    );
+  const dataArr = []
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].id === id) {
+      dataArr.push(data[i])
+    }
   }
 
-  const dataArr = [];
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].id === id) dataArr.push(data[i]);
+  if (error) {
+    return (
+      <span className="error">Un problème est survenu lors du téléchargement des images</span>
+    );
   }
 
   return (
@@ -47,6 +52,19 @@ function Lease() {
                   className="host-img"
                 />
               </figure>
+            </div>
+            <div className="tag">
+              <ul className="tag-list">
+                {dataArr.map(({ tags }) => {
+                  return tags.map((tag) => {
+                    return (
+                      <li className="tag-item" key={tag}>
+                        {tag}
+                      </li>
+                    );
+                  });
+                })}
+              </ul>
             </div>
           </div>
         </div>
