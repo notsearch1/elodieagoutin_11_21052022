@@ -1,6 +1,6 @@
 .about{
-    max-width: 1000px;
-    margin:0 auto;
+    width: 60%;
+    margin:20px auto;
 }
 .about-title{
     display:flex;
@@ -40,9 +40,23 @@
     .about-title-text{
        font-size: 13px; 
     }
+    .about{
+        width: calc(100% - 40px);
+        
+    }
+    .about-description{
+       font-size: 12px;
+       padding:20px 10px;
+    }
+.fa-angle-down{
+    font-size:15px;
+}
    
   }
+  @media (max-width: 900px) and (min-width:768px){
+    .about-title-text{
+        font-size: 18px; 
+     }
+   
+ }
   
-  @media (max-width: 900px) and (min-width: 768px) {
-   
-  }

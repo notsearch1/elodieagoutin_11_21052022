@@ -3,19 +3,26 @@
   position: relative;
 }
 .title-container {
+  margin-top:15px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column-reverse;
+  align-items: end;
+  position: absolute;
+  right: 0;
+  top:0;
+  
 }
 
-.host-container {
-  position: absolute;
-  top:0;
-  right: 0;
+.host-container, .star-container {
   width: 50%;
   display: flex;
   align-items: center;
+ 
+}
+.host-container{
+  top:0;
+  height: 50px;
   justify-content: end;
 }
 
@@ -49,10 +56,30 @@
   margin-right: 10px;
 }
 .star-container {
+  width: 100%;
   list-style: none;
-  display: flex;
+  top:60px;
+  justify-content: end;
 }
 
+.tag-list{
+  margin-top: 10px;
+  display:flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.tag-item{
+  background-color: #ff6060;
+  color:#fff;
+  font-size: 14px;
+  padding:3px 30px;
+  border-radius:10px;
+  margin:10px 10px 10px 0;
+
+}
+.equipement-list{
+  list-style: none;
+}
 @media (max-width: 768px) {
   .information-section {
     margin: 20px;
@@ -63,8 +90,8 @@
   .lease-location {
     font-size: 14px;
   }
-  .host-container {
-    position:initial;
+  .star-container {
+    justify-content: start;
   }
   .star{
       width:15px;
@@ -79,11 +106,26 @@
     width: 32px;
     border-radius: 50px;
   }
+  .title-container {
+    position:initial;
+    margin-top:15px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+    
+  }
 }
 
 @media (max-width: 900px) and (min-width: 768px) {
   .information-section {
     margin: 40px;
+  }
+  .title-container {
+    margin-top:15px;
+    width: 100%;
+  
   }
   
 }
