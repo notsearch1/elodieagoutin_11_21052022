@@ -1,6 +1,6 @@
 .carouselContainer {
   position: relative;
-  margin: 0 100px;
+
   height: 415px;
 }
 
@@ -31,7 +31,7 @@
 }
 @media (max-width: 768px) {
   .carouselContainer {
-    margin: 20px;
+    margin: 20px 0;
   }
   .lease,
   .carouselContainer {
@@ -49,6 +49,6 @@
 
 @media (max-width: 900px) and (min-width: 768px) {
   .carouselContainer {
-    margin: 40px;
+    margin: 40px 0;
   }
 }

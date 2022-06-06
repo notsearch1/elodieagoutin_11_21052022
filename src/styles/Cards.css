@@ -1,7 +1,7 @@
 .cardsContainer {
     display: flex;
     flex-wrap: wrap;
-    margin: 30px 100px;
+    margin: 30px 0;
     padding:50px;
     justify-content: space-around;
     height: auto;
@@ -50,7 +50,7 @@
 
 @media (max-width: 768px) {
   .cardsContainer {
-    margin: 20px;
+    margin: 20px 0;
     width: calc(100%-40px);
     background-color: transparent;
     /* display:block; */
@@ -67,7 +67,7 @@
 }
 @media (max-width: 900px) and (min-width: 768px){
   .cardsContainer {
-    margin: 40px;
+    margin: 40px 0;
   }
   .linkCard, .imgCard, .maskCard{
     width: 100%;

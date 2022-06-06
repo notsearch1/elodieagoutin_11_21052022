@@ -7,6 +7,7 @@ import "../../styles/Dropdown.css";
 import { useParams } from "react-router-dom";
 import { Loader } from "../../utils/Atoms.jsx";
 import Stars from "../Stars";
+import { Fragment } from "react";
 
 
 
@@ -32,33 +33,17 @@ function Lease() {
     );
   }
   return (
-    <div>
+    <Fragment>
+      <div className="container">
       <Header />
       {isLoading ? (
         <Loader />
       ) : (
         <div>
           <Carousel data={data} />
-          <div className="information-section">
-            <h1 className="lease-title">{dataArr[0].title}</h1>
-            <span className="lease-location">{dataArr[0].location}</span>
-              <div className="tag">
-                <ul className="tag-list">
-                  {dataArr.map(({ tags }) => {
-                    return tags.map((tag) => {
-                      return (
-                        <li className="tag-item" key={tag}>
-                          {tag}
-                        </li>
-                      );
-                    });
-                  })}
-                </ul>
-              </div>
+          <section className="information-section">
             <div className="title-container">
-              <ul className="star-container">
-                <Stars number={dataArr[0].rating} />
-              </ul>
+            <h1 className="lease-title">{dataArr[0].title}</h1>
               <figure className="host-container">
                 <figcaption className="host-name">
                   {dataArr[0].host.name}
@@ -70,6 +55,24 @@ function Lease() {
                 />
               </figure>
             </div>
+            <span className="lease-location">{dataArr[0].location}</span>
+              <div className="tag-star-container">
+                <ul className="tag-list">
+                  {dataArr.map(({ tags }) => {
+                    return tags.map((tag) => {
+                      return (
+                        <li className="tag-item" key={tag}>
+                          {tag}
+                        </li>
+                      );
+                    });
+                  })}
+                </ul>
+                <ul className="star-container">
+                  <Stars number={dataArr[0].rating} />
+                </ul>
+              </div>
+            </section>
             <section className="dropdown-section">
               <div className="dropdown-container">
               <div className="dropdown-title">
@@ -110,10 +113,11 @@ function Lease() {
               </div>
             </section>
         </div> 
-      </div>
+      
   )}
+  </div>
       <Footer />
-    </div>
+    </Fragment>
 )}
 
 export default Lease;

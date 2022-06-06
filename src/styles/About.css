@@ -41,7 +41,7 @@
        font-size: 13px; 
     }
     .about{
-        width: calc(100% - 40px);
+        width: 100%;
         
     }
     .about-description{
