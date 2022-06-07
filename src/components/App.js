@@ -13,8 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apropos" element={<About />} />
-          <Route path="/lease/:id" element={<Lease />} />
-          <Route path="/lease/*" element={<Error />} />
+          <Route path="/location/:id" element={<Lease />} />
           <Route path="/*" element={<Error />} />
         </Routes>
       </BrowserRouter>
