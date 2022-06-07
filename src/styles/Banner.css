@@ -3,8 +3,6 @@
   border-radius: 25px;
   height: 225px;
   width: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +29,8 @@
   .slogan {
     font-size: 32px;
   }
+
+  
 }
 
 @media (max-width: 500px) {
